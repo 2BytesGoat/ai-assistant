@@ -18,7 +18,7 @@ class GOATChat:
         self.take_picture = False
         self.stop = False
 
-        self.image_to_text = pipeline("image-to-text", model="nlpconnect/vit-gpt2-image-captioning", device=0)
+        self.image_to_text = pipeline("image-to-text", model="nlpconnect/vit-gpt2-image-captioning")
 
     def on_press(self, key):
         if key == Key.space:

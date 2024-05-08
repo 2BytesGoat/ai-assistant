@@ -27,7 +27,7 @@ Thought:{agent_scratchpad}"""
 class GOAT:
     def __init__(self):
         load_dotenv(".env")
-        self.custom_tools = self.get_custom_tools(["search"])
+        self.custom_tools = self.get_custom_tools()
         self.chat_history = MessagesPlaceholder(variable_name="chat_history")
         self.memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
 
